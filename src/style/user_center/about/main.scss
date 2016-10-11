@@ -1,0 +1,18 @@
+.about_list{
+  li{
+    height:50px;
+    line-height:50px;
+    border-bottom: 1px solid #f1f1f1;
+    color: #050505;
+    font-size: 1.4rem;
+    background: #fff url('../../images/user_center/veh_ico.jpg') 96% center no-repeat;
+    a{
+      height:50px;
+      line-height:50px;
+      display:inline-block;
+      padding-left: 20px;
+      width:100%;
+      box-sizing:border-box;
+    }
+  }
+}

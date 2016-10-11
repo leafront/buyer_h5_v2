@@ -1,0 +1,61 @@
+@-webkit-keyframes showtips{
+  0%{top:0;}
+  20%{top:0;}
+  25%{top:-22px;}
+  45%{top:-22px;}
+  50%{top:-44px;}
+  75%{top:-44px;}
+  80%{top:-66px;}
+  100%{top:-66px;}
+}
+@keyframes showtips{
+  0%{top:0;}
+  20%{top:0;}
+  25%{top:-22px;}
+  45%{top:-22px;}
+  50%{top:-44px;}
+  75%{top:-44px;}
+  80%{top:-66px;}
+  100%{top:-66px;}
+}
+.four_safeguards {
+  margin-top: 0;
+  background: white;
+  -webkit-box-align: center;
+  padding: 1rem 1rem 0.7rem 1rem;
+  box-sizing: border-box;
+  overflow: hidden;
+  .tips_container {
+    float: right;
+    margin-top: 1px;
+    position: relative;
+    height: 22px;
+    overflow: hidden;
+    .tip{
+      position:relative;
+      top:0;
+      -webkit-animation: showtips 12s infinite;
+      animation: showtips 12s infinite;
+      padding-left: 0.5rem;
+      line-height: 1.9em;
+      color: #2b2b2b;
+      font-size: 1.2rem;
+      span{
+        color: #EC3E3D
+      }
+    }
+  }
+  .icon_container {
+    width: 9rem;
+    height: 2rem;
+    margin-top: 0.2rem;
+    float: left;
+    .ico {
+      display: block;
+      width: 148px;
+      height: 24px;
+      background: url(../../images/common/hmc_bz.png) no-repeat;
+      background-size: 120px;
+    }
+  }
+}

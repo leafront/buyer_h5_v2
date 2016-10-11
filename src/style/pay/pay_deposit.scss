@@ -1,0 +1,181 @@
+.pay_deposit{
+  i{
+    font-style:normal;
+  }
+  margin: 0 auto;
+  font-size: 1.2rem;
+  padding-bottom:50px;
+  .view_orders{
+    background:#fff;
+    padding-left: 16px;
+    padding-top:14px;
+    padding-bottom:14px;
+    p{
+      line-height:24px;
+      height:24px;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      em{
+        font-size: 1.4rem;
+        color: #E92929;
+      }
+    }
+  }
+  .pay_online {
+    height:auto;
+    margin-top: 10px;
+    background:#fff;
+    h2{
+      height: 30px;
+      border-bottom: 1px solid #f1f1f1;
+      line-height: 30px;
+      padding-left: 20px;
+      color:#a1a1a1;
+      font-size:14px;
+    }
+    p {
+      position: relative;
+      margin: 10px auto;
+      img{
+        width:46px;
+        margin-left: 16px;
+        margin-bottom: 10px;
+      }
+      i{
+        position: absolute;
+        left:70px;
+        top:6px;
+        font-size: 1.3rem;
+      }
+      span{
+        position: absolute;
+        left: 70px;
+        top: 24px;
+        color: #a1a1a1;
+      }
+      em{
+        position: absolute;
+        right: 10px;
+        top: 14px;
+        border-left: 2px dotted #e4e4e4;
+        width:40px;
+        height: 20px;
+        a, button{
+          width: 22px;
+          height: 22px;
+          border: 2px solid #e0e0e0;
+          border-radius:50%;
+          display: block;
+          margin-left: 10px;
+          margin-top: -2px;
+          background:#fff;
+          &.current{
+            background: url("../../images/pay/da_yes.png") no-repeat center;
+            background-size:24px;
+            border:2px solid #ec4747;
+          }
+        }
+      }
+    }
+  }
+  .pay_info {
+    height: 90px;
+    background: #fffef1;
+    padding:20px;
+    margin-bottom: 10px;
+    span {
+      display: block;
+      line-height: 20px;
+      i{
+        color: #E92929;
+      }
+    }
+    p{
+      color: #E92929;
+      margin-top: 20px;
+    }
+  }
+  .pay_protocol {
+    margin-bottom:40px;
+    text-align: center;
+    button {
+      background: none;
+      position: relative;
+    }
+    .pay_protocol_agree_btn::before {
+      width:24px;
+      height:24px;
+      left:-30px;
+      top:-4px;
+      display: block;
+      content: '';
+      position: absolute;
+      border: 2px solid #e0e0e0;
+      border-radius: 50px;
+    }
+    &.active .pay_protocol_agree_btn::before {
+      background: url("../../images/pay/da_yes.png") no-repeat center;
+      background-size: cover;
+      border:2px solid transparent;
+    }
+  }
+  .popup_protocol_wrapper {
+    width:100%;
+    height:100%;
+    display: none;
+    background:rgba(0, 0, 0, 0.6);
+    position: fixed;
+    top:0;
+    left:0;
+    z-index: 100;
+  }
+  .popup_protocol_content {
+    width:80%;
+    height: 65%;
+    padding:5%;
+    line-height: 1.4rem;
+    border-radius: 6px;
+    margin:0 auto;
+    background:white;
+    position: relative;
+    top:80px;
+    overflow: scroll;
+    h2 {
+      text-align: center;
+      font-size: 1.6rem;
+    }
+    .popup_protocol_content_list_text_indent {
+      text-indent: 25px;
+    }
+  }
+  .popup_protocol_close_btn {
+    width:20px;
+    height:20px;
+    background: white;
+    position: absolute;
+    right:5%;
+    top:50px;
+    font-size: 20px;
+    line-height: 20px;
+    border-radius: 50px;
+    &::before {
+      content:'⨯';
+      position: relative;
+      top:-4px;
+      font-size: 28px;
+    }
+  }
+  .go_pay{
+    width: 100%;
+    height: 50px;
+    position: fixed;
+    background: #ec4949;
+    left: 0;
+    bottom: 0;
+    text-align: center;
+    line-height: 50px;
+    color: #fff;
+    font-size: 1.4rem;
+  }
+}

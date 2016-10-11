@@ -1,0 +1,54 @@
+.hot_car {
+  background: white;
+  margin-top: 1rem;
+  .title {
+    height: 2.5rem;
+    line-height: 2.5rem;
+    position: relative;
+    h2 {
+      padding: 0 0 0 1rem;
+      color: #868686;
+      font-size: 1.2rem;
+      border-left: 0.5rem solid #fa4d4d;
+    }
+    a {
+      position: absolute;
+      right: 1rem;
+      top:0;
+      line-height: 2.5rem;
+      color: #fa4d4d;
+      background: none;
+    }
+  }
+  .list {
+    background:white;
+    overflow: hidden;
+    li {
+      text-align: center;
+      float: left;
+      padding: 0 0.6rem 1.6667rem;
+      width: 50%;
+      box-sizing: border-box;
+      -webkit-box-sizing: border-box;
+      border-top: 1px solid #f0f0f0;
+      border-right: 1px solid #f0f0f0;
+      font-size: 1.1rem;
+      position: relative;
+      img {
+        width: 15.5rem;
+        height: 9.25rem;
+      }
+      .car_name {
+        height: 30px;
+        text-align: left;
+      }
+      .price {
+        color: #fb711d;
+        float: left;
+      }
+      .customer_count {
+        color: #a1a1a1;
+      }
+    }
+  }
+}

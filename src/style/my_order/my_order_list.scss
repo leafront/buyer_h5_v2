@@ -1,0 +1,164 @@
+.my_order_buy_item, .my_order_buy_detail_content{
+  .order {
+    width: 100%;
+    height: auto;
+    background: #fff;
+    margin-top: 10px;
+    .gen_time {
+      box-sizing:border-box;
+      color: #a1a1a1;
+      padding-left: 10px;
+      padding-right: 10px;
+      line-height: 30px;
+      border-bottom: 1px solid #f1f1f1;
+      float:left;
+      width:100%;
+      .trans_code {
+        float: left;
+      }
+      .generate_time{
+        float:right;
+      }
+    }
+    .car_message {
+      clear:both;
+      min-height: 76px;
+      img {
+        width: 100px;
+        float: left;
+        margin-right: 6px;
+        margin-left: 6px;
+        padding-top:6px;
+      }
+      span {
+        display: block;
+        color: #050505;
+        padding-top: 20px;
+        padding-bottom:20px;
+        padding-right:10px;
+        margin-left: 112px;
+        em{
+          font-size:1.2rem;
+          font-weight:bold;
+          display:inline-block;
+          padding-bottom:4px;
+        }
+      }
+    }
+    .fare {
+      clear:both;
+      width: 100%;
+      height: auto;
+      padding-top: 10px;
+      padding-bottom:: 10px;
+      border-top: 1px solid #f1f1f1;
+      border-bottom: 1px solid #f1f1f1;
+      p {
+        display:inline-block;
+        line-height: 20px;
+        margin-left: 10px;
+        color: #a1a1a1;
+        font-size: 1.3rem;
+        i {
+          color: #E92929;
+          font-style:normal;
+        }
+        &:first-of-type {
+          i {
+            font-size: 1.4rem;
+            font-weight: bold;
+          }
+        }
+      }
+      .save{
+        position: absolute;
+        right:10px;
+      }
+    }
+    .select {
+      height: auto;
+      width: 100%;
+      padding-top: 20px;
+      background: url("../../images/user_center/semi-circle-right.jpg") no-repeat top right , url("../../images/user_center/semi-circle-left.jpg") no-repeat top left , url("../../images/user_center/dot.jpg") repeat-x 6px 10px;
+      .se_sty {
+        margin-left: 20px;
+        margin-right: 16px;
+        span {
+          border-right: 1px solid #a1a1a1;
+          padding-right: 6px;
+          padding-left:6px;
+          color: #a1a1a1;
+          &:last-child{
+            border-right:none;
+          }
+          &:first-child{
+            padding-left:0;
+          }
+        }
+      }
+    }
+  }
+  .look_detail {
+    background: #fff;
+    height: 40px;
+    padding-top: 10px;
+    text-align:center;
+    a {
+      width: 38%;
+      height: 30px;
+      border-radius: 30px;
+      background: #fa4d4d;
+      color: #fff;
+      display: inline-block;
+      font-size: 1.4rem;
+      line-height: 30px;
+      font-weight:bold;
+      &:first-child{
+        margin-right:14px;
+      }
+      &:nth-child(2){
+        background:#0097f9;
+      }
+    }
+  }
+}
+
+.my_order_buy_detail_content{
+  .order{
+    .gen_time{
+      .trans_code{
+        float:right;
+      }
+    }
+    .fare{
+      border:none;
+      padding-top:24px;
+      padding-bottom:0;
+      background: url("../../images/user_center/semi-circle-right.jpg") no-repeat top right , url("../../images/user_center/semi-circle-left.jpg") no-repeat top left , url("../../images/user_center/dot.jpg") repeat-x 6px 10px;
+    }
+    .car_message {
+      padding-top:0;
+      span{
+        padding-bottom:0;
+      }
+    }
+    .select{
+      padding-top:26px;
+      padding-bottom:16px;
+    }
+  }
+}
+
+@media screen and (max-width: 360px) {
+  .my_order_buy_detail_content{
+    .order{
+      .gen_time{
+        .trans_code{
+          float: none;
+          display: block;
+          margin-top: -10px;
+        }
+      }
+    }
+  }
+}

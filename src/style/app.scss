@@ -1,0 +1,112 @@
+@charset "utf-8";
+/* CSS Document */
+
+/************global.css*******************/
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  vertical-align: baseline;
+  word-wrap: break-word;
+  -webkit-tap-highlight-color:rgba(0,0,0,0);
+  -moz-tap-highlight-color:rgba(0,0,0,0);
+  }
+table { border-collapse: collapse; border-spacing: 0; }
+input, button, select, textarea { outline: 0; -webkit-box-sizing: border-box; border: 0; margin: 0; padding: 0; }
+input:focus, textarea:focus { outline: 0; border: 0; }
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section { display: block; }
+ol, ul, li { list-style: none; }
+blockquote, q {  quotes: none; }
+blockquote:before, blockquote:after, q:before, q:after { content: ''; content: none; }
+b { font-weight: bold; }
+img { max-width:100%;vertical-align: middle; border: 0;  -ms-interpolation-mode: bicubic; -webkit-touch-callout: none; }
+:focus { outline: none; }
+a { color: #333; text-decoration: none;}
+a.active { color: #06c; }
+
+.clearfix:after {
+  content:"";
+  display:table;
+  clear:both;
+}
+.fl {
+  float: left;
+}
+.fr {
+  float: right;
+}
+
+input { outline: 0; -webkit-box-sizing: border-box; -webkit-tap-highlight-color: rgba(0,0,0,0); -webkit-appearance: none; }
+input:focus, textarea:focus { outline: 0; border: 0; -webkit-tap-highlight-color: rgba(0,0,0,0); -webkit-appearance: none;  }
+
+html {
+  font-size: 62.5%;
+}
+body {
+  -webkit-font-smoothing: antialiased;
+  background: #efefef;
+  min-width: 320px;
+  padding-top: 44px;
+  font-family:"Microsoft Yahei", "Helvetica Neue",sans-serif, Helvetica, STHeiTi;
+}
+
+.attention_message {
+  background: rgba(255,255,255,0);
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  z-index: 10000;
+  // display: none;
+  .message_box {
+    background: rgba(0,0,0,0.9);
+    position: relative;
+    border-radius: 4px;
+    padding: 10px 0;
+    width: 60%;
+    line-height: 2rem;
+    font-size: 1.4rem;
+    margin: 0 auto;
+    text-align: center;
+    color: white;
+    min-height: 2rem;
+    top: 30%;
+  }
+}
+
+@import '../style/index/hot_brand_list.scss';
+@import '../style/index/hot_car_list.scss';
+@import '../style/index/more_button.scss';
+@import '../style/index/main.scss';
+@import '../style/brand_list/main.scss';
+@import '../style/car_series/main.scss';
+@import '../style/user_center/main.scss';
+@import '../style/user_center/my_inquire.scss';
+@import '../style/user_center/my_inquire_detail.scss';
+@import '../style/user_center/account.scss';
+@import '../style/user_center/feedback.scss';
+@import '../style/user_center/setting.scss';
+@import '../style/user_center/about/main.scss';
+@import '../style/user_center/about/about_hmc.scss';
+@import '../style/user_center/about/com_problem.scss';
+@import '../style/user_center/about/protocol.scss';
+@import '../style/my_order/my_order_list.scss';
+@import '../style/my_order/my_order_buy_detail.scss';
+@import '../style/my_order/free_upgrade_config.scss';
+@import '../style/login_reg/main.scss';
+@import '../style/car_model/main.scss';
+@import '../style/car_parity/main.scss';
+@import '../style/car_shop/main.scss';
+@import '../style/inquire/main.scss';
+@import '../style/common/top_bar.scss';
+@import '../style/common/recommend.scss';
+@import '../style/common/bottom_option_button.scss';
+@import '../style/auth/main.scss';
+@import '../style/common/loading.scss';
+@import '../style/common/im_chat_button.scss';
+@import '../style/direct_sale_list/main.scss';
+@import '../style/common/four_safeguards.scss';
+@import '../style/pay/pay_success.scss';
+@import '../style/pay/pay_deposit.scss';
+@import '../style/common/bottom_nav_button.scss';
+@import '../style/price/main.scss';

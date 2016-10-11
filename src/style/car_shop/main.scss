@@ -1,0 +1,209 @@
+.car_shop {
+  .popup_area {
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.6);
+    z-index: 1000;
+    position: fixed;
+    top: 0;
+    .content {
+      position: relative;
+      top: 60px;
+      background: white;
+      width: 90%;
+      height: 70%;
+      margin: 0 auto;
+      border-radius: 8px;
+      padding-bottom: 40px;
+      .title {
+        height: 40px;
+        text-align: center;
+        border-bottom: 1px solid #eee;
+        h2 {
+          color: black;
+          font-weight: bold;
+          font-size: 1.4rem;
+          line-height: 40px;
+        }
+      }
+      .district_and_area {
+        width: 100%;
+        height: 100%;
+        margin-bottom:-40px;
+        overflow: hidden;
+        position: relative;
+        .district,.area {
+          height: 100%;
+          overflow: scroll;
+          display: inline-block;
+          vertical-align: top;
+          text-align: center;
+          position: absolute;
+          li {
+            line-height: 4rem;
+            font-size: 1.4rem;
+            &.active {
+              background:#eee;
+              color:#ec4949;
+            }
+          }
+        }
+        .district {
+          width: 40%;
+          border-right: 1px solid #eee;
+          margin-right: -1px;
+          left: 0;
+        }
+        .area {
+          width: 60%;
+          right: 0;
+        }
+      }
+    }
+  }
+  .shop_list {
+    padding-bottom: 5.5rem;
+    .confirm {
+      width: 100%;
+      height: 5.5rem;
+      background: white;
+      position: fixed;
+      left: 0;
+      bottom: 0;
+      box-shadow: 1px -2px 4px rgba(0,0,0,0.2);
+      button {
+        width: 90%;
+        height: 3.2rem;
+        margin: 12px auto 0;
+        color: #fff;
+        font-size: 1.4rem;
+        text-align: center;
+        line-height: 3.2rem;
+        background: #ec4949;
+        z-index: 99;
+        border-radius: 8px;
+        display: block;
+      }
+    }
+    dt {
+      width: 100%;
+      height: 2.4rem;
+      line-height: 2.4rem;
+      text-indent: 1rem;
+      font-size: 1.2rem;
+      color: #878787;
+      background: #efefef;
+      position: relative;
+      b{
+        color: #ec4949;
+      }
+    }
+    dd {
+      padding: 1.2rem 0;
+      border-bottom: 1px solid #efefef;
+      overflow: hidden;
+      position: relative;
+      background: white;
+      h3 {
+        font-size: 1.4rem;
+      }
+      &.active {
+        &::after {
+          display: block;
+        }
+      }
+      &::after {
+        width: 2.5rem;
+        height: 2.5rem;
+        background: url(../../images/car_shop/ico2.png) -347px -170px no-repeat;
+        background-size: 570px auto;
+        position: absolute;
+        content: '';
+        top: 0;
+        right: 0;
+        display: none;
+      }
+      .preview_img {
+        margin: 0 1.2rem;
+        img {
+          width: 7.3rem;
+        }
+      }
+      .address_info {
+        .name {
+          margin-bottom: 0.2rem;
+        }
+        .address {
+          color: #A1A1A1;
+          width:16rem;
+        }
+        .signed_icon {
+          display: none;
+          font-size: 12px;
+          color: #00aaee;
+          border: 1px solid #00aaee;
+          border-radius: 2px;
+          &.active {
+            display: inline;
+          }
+          span {
+            padding:0 4px;
+          }
+          .blue_highlight {
+            color: white;
+            background: #00aaee;
+          }
+        }
+        .icon_container{
+          margin:4px 0 10px;
+        }
+      }
+      .distance {
+        color: #ec4949;
+        position: absolute;
+        right: 10px;
+      }
+    }
+  }
+  .area_options {
+    width: 100%;
+    height: 4.5rem;
+    line-height: 4.5rem;
+    font-size: 1.4rem;
+    color: white;
+    background: #868686;
+    position: relative;
+    z-index: 110;
+    border-bottom: 1px solid #efefef;
+    display: table;
+    dt,dd {
+      width:33.3%;
+      display: table-cell;
+      vertical-align: middle;
+      text-align: center;
+      padding: 0 1%;
+    }
+    dd {
+      button {
+        width: 100%;
+        height: 34px;
+        margin: 0 1%;
+        display: inline-block;
+        background: white;
+        border-radius: 4px;
+        position: relative;
+        vertical-align: middle;
+        &::after {
+          width: 9px;
+          height: 18px;
+          right: 5px;
+          top: 8px;
+          content: '';
+          position: absolute;
+          background: url(../../images/car_shop/car_shop_area_button_icon.png) no-repeat;
+          background-size: cover;
+        }
+      }
+    }
+  }
+}

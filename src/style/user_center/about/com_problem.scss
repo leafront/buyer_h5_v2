@@ -1,0 +1,27 @@
+.com_problem_content{
+  li{
+    border-bottom: 1px solid #f1f1f1;
+    span {
+      line-height: 50px;
+      padding-left: 20px;
+      width: 94%;
+      border-bottom: 1px solid #f1f1f1;
+      height: 50px;
+      display: block;
+      background: #fff url('../../images/user_center/down_ico.jpg') 96% center no-repeat;
+      &.active{
+        background: #fff url('../../images/user_center/up_ico.jpg') 96% center no-repeat;
+      }
+    }
+    p {
+      padding:5px 19px;
+      background: #fff;
+      width:90%;
+      display:none;
+      color:#c2c2c2;
+      &.active{
+        display:block;
+      }
+    }
+  }
+}

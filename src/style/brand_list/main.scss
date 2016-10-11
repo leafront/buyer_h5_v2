@@ -1,0 +1,33 @@
+.brand_list {
+  dl {
+    dt {
+      h2 {
+        font-size: 2rem;
+        font-weight: normal;
+        padding-left: 1.5rem;
+        color: #757575;
+      }
+    }
+    dd {
+      border-bottom: 1px solid #eee;
+      background: white;
+      position: relative;
+      a {
+        display: block;
+        font-size: 1.4rem;
+      }
+      .shop_count {
+        b {
+          color: #ec4949;
+        }
+        position: absolute;
+        right: 1.5rem;
+        top:0;
+        line-height: 4.8rem;
+      }
+      img {
+        height: 4.5rem;padding: 0 1.5rem;
+      }
+    }
+  }
+}

@@ -1,0 +1,112 @@
+<!doctype html>
+<html>
+<head>
+<meta charset='utf-8'>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, minimal-ui">
+<title>最新版客服访客端</title>
+<style>
+a {    display: block;background-color: #00A5FF;width: 200px;padding: 10px;line-height: 20px;text-decoration: none;border-radius: 4px;margin-top: 30px;color: #fff;
+}
+</style>
+</head>
+<body style='/*background-color:#aaa;*/' >
+<script>
+window.easemobim = window.easemobim || {};
+
+easemobim.config = {
+	tenantId: '9464',										//租户id
+	to: 'test',												//指定关联对应的im号
+	appKey: 'l',											//关联的appkey,				appKey: 'orgName#appName'
+	//domain: '//sandbox.kefu.easemob.com',	
+	domain: '//kefu.easemob.com',											//环信移动客服域,			domain: '//kefu.easemob.com', 
+	path: '//localhost/huanxin/kefu/kefu43',											//im.html的本机服务器路径,	path: '//XXX/webim'
+	staticPath: '//localhost/huanxin/kefu/kefu43/static',										//访客插件static的路径,		staticPath: '//XXX/webim/static'
+	xmppServer: 'im-api.easemob.com',										//环信IM服务器,				xmppServer: 'im-api.easemob.com'
+	restServer: 'a1.easemob.com',										//环信REST服务器,			restServer: 'a1.easemob.com'
+	visitor: '',	
+	
+	autoConnect: false,									//自动连接
+	buttonText: '联系客服',								//设置小按钮的文案
+	hide: false,											//是否隐藏小的悬浮按钮
+	resources: false,									//是否启用收消息同步
+	dragenable: false,									//是否允许拖拽
+	dialogWidth: '400px',								//聊天窗口宽度
+	dialogHeight: '500px',								//聊天窗口高度
+	minimum: false,										//是否允许窗口最小化
+	satisfaction: true,									//是否允许访客主动发起满意度评价
+	soundReminder: true,								//是否启用声音提醒(低版本浏览器不支持)
+	dialogPosition: { x: '10px', y: '10px' },			//聊天窗口初始位置，坐标以视口右边距和下边距为基准
+	onmessage: function ( message ) { },				//收消息回调, 只对当前打开的聊天窗口有效
+	onready: function () { },							//聊天窗口加载成功回调
+	
+
+	/*
+	 * 可集成自己的用户，如不集成，则使用上面配置的appkey创建随机访客
+	 * 如果上面没有配置appkey，那么将使用配置的tenantId获取体验关联，使用体验关联的相关信息
+	 * 验证的方式二选一，必填，另一项为空即可
+	 */
+	/**/
+	/*
+	user: {
+		username: '',										//集成时必填
+		password: '',										//password验证方式
+		token: ''											//token验证方式
+	},
+	
+	visitor: {
+				trueName: '小A',
+				qq: '115464',
+				phone: '18612390240',
+				companyName: '环信',
+				userNickname: '428test2用户',
+				description: '付款了；',
+				email: '123456@qq.com'
+			},										//访客信息
+	*/
+};
+</script>
+<!--<script src='/kefu-webim-dev43/easemob.js'></script>-->
+<!--script src='//sandbox.kefu.easemob.com/webim/easemob.js'></script-->
+<script src='//localhost/huanxin/kefu/kefu43/easemob.js'></script>
+	
+	<style>
+	#group-box{
+	position:absolute;position:fixed;width:100px;height:200px;border:1px solid;background:#FFFFFF;padding:20px;
+	}
+	#group-box p{
+		line-height:20px;
+		padding:10px ;
+	}
+	#group-box p a{
+		color:green;
+		text-decoration:none;
+	}
+
+	</style>
+
+<div class="group-box" style="">
+	<h3>新版多租户</h3>
+	<p>
+	<a href='javascript:;' onclick='easemobim.bind({
+		tenantId: 15993,
+		appKey: "haomaiche#haomaiche",	
+		to: "758l9c1yl5",
+		//xmppServer: "im-api.easemob.com",										
+		//restServer: "a1.easemob.com",	
+		buttonText: "快联系我"			
+	})'>联系我</a>
+    </p>
+</div>
+
+<a onclick='easemobim.bind({
+    tenantId: "399",
+    appKey: "",	
+    to: "",
+    xmppServer: "im-api.easemob.com",										
+	restServer: "a1.easemob.com",
+    buttonText: "快联系我"
+    
+})'>自定义按钮</a>
+
+</body>
+</html>

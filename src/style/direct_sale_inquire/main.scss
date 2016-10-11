@@ -1,0 +1,116 @@
+.directSaleInquire{
+	.customerService{
+		background-color: #fff;
+		margin-top:40px;
+		img{
+			border-radius: 50%;
+			margin-top:-18px;
+			border:4px solid #fff;
+			width:20%;
+			margin-left:40%;
+		}
+		p{
+			color:#5d5d5d;
+			text-align: center;
+		}
+		.receive{
+			margin-top:15px;
+			font-size:1.4rem;
+		}
+		.contact{
+			margin-top:10px;
+			font-size:2rem;
+			font-weight:bolder;
+			padding-bottom:10px;
+		}
+	}
+
+	.contactService{
+		div{
+			display: inline-block;
+			text-align:center;
+
+		}
+		.phoneNumber,.onlineChat{
+			border-radius:5px;
+			height:30px;
+			line-height:30px;
+		}
+		.phoneNumber{
+			background-color:#ff6363;
+			width:70%;
+			margin-left:5%;
+			margin-top:2%;
+			span{
+				color:#fff;
+				display:inline-block;
+				width:100%;
+				font-size:1.4rem;
+				font-weight:bold;
+			}
+		}
+		.onlineChat{
+			background-color:#ff9d4d;
+			width:20%;
+			margin-left:2%;
+			p{
+				display:inline-block;
+			}
+			.im_chat{
+				background-color:#ff9d4d;
+				color:#fff;
+				font-size:1.4rem;
+				font-weight:bold;
+			}
+		}
+	}
+
+	.samePrice{
+		background-color:#fff;
+		.samePriceTitle{
+			text-align:center;
+			font-size:1.6rem;
+			margin-top:10px;
+			padding-top:20px;
+			padding-bottom:20px;
+		}
+		li{
+			width:48%;
+			display:inline-block;
+			padding-bottom:10px;
+			img{
+				width:95%;
+			}
+			.samePriceContent{
+				margin-left:10px;
+				.carName{
+					font-size:1.4rem;
+					font-weight:bold;
+					margin-bottom:2px;
+					width:95%;
+					text-overflow:ellipsis;
+					white-space: nowrap;
+					overflow:hidden;
+					span{
+						margin-right:5px;
+					}
+				}
+				.carPrice{
+					display:inline-block;
+					margin-bottom:4px;
+					margin-right:2px;
+					span{
+						color:#fc4d4d;
+						font-size:1.4rem;
+						font-weight:bold;
+					}
+				}
+				.guidePrice{
+					display:inline-block;
+					text-decoration: line-through;
+					color:#ccc;
+				}
+			}
+		}
+	}
+}

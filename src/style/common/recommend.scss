@@ -1,0 +1,19 @@
+strong{
+  &.recommend{
+    font-size: 12px;
+    display: inline;
+    margin-left: 8px;
+    color: #00aaee;
+    border: 1px solid #00aaee;
+    border-radius: 2px;
+    em{
+      padding: 0 4px;
+      font-style:normal;
+      &.color{
+        color: #fff;
+        background: #00aaee;
+      }
+    }
+  }
+}
+em{font-style:normal;}

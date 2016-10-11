@@ -1,0 +1,254 @@
+.car_model {
+  .history_popup {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    background: rgba(0,0,0,0.6);
+    z-index: 10;
+    .close_button {
+      position: absolute;
+      right: 4%;
+      top: 55px;
+      width: 28px;
+      height: 28px;
+      color: gray;
+      text-align: center;
+      line-height: 28px;
+      background: white;
+      border-radius: 50px;
+      font-size: 25px;
+      &::before {
+        content: '×';
+        display: block;
+        top: -1px;
+        left: 6px;
+      }
+    }
+    .tab_box {
+      width: 80%;
+      margin: 10rem auto 0;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      overflow: hidden;
+      background: #F7F7F7;
+      .tab_switch {
+        height: 28px;
+        transform: translateZ(0);
+        background: none;
+        border-radius: 10px 10px 0 0;
+        color: white;
+        font-size: 1.4rem;
+        overflow: hidden;
+        text-align: center;
+        background: #BBB;
+        li {
+          position: relative;
+          transition: all 0.5s;
+          display: inline-block;
+          width: 33.333333333%;
+          height: 28px;
+          line-height: 28px;
+          vertical-align: top;
+          border-left: 1px solid #FFF;
+          margin-left: -1px;
+          &.active {
+            background: #EC4949;
+          }
+        }
+      }
+      .tab_content {
+        table {
+          width: 100%;
+          margin: 0 auto;
+          background: url('../../images/car_model/car_model_popup_history.png') center 140px no-repeat;
+          thead {
+            border-bottom: 1px dotted #ddd;
+            background: white;
+          }
+          tbody {
+            border-bottom: 1px dotted #ddd;
+            tr {
+              td {
+                &:nth-child(1){
+                  padding: 2px 0 2px 15px;
+                  color: #707070;
+                }
+                &:nth-child(2){
+                  text-align: right;
+                  padding: 2px 15px 2px 0;
+                }
+                &.create_time {
+                  padding: 8px 0;
+                  text-align: center;
+                  color: #868686;
+                  border-top: 1px dotted #ddd;
+                }
+                &.total_price {
+                  b {
+                    color: #EC4949;
+                  }
+                }
+              }
+            }
+          }
+          tr {
+            &.price_preview {
+              border-top: 1px dotted #ddd;
+              position: relative;
+              z-index: 1;
+              th {
+                &:nth-child(1) {
+                  border-right: 1px dotted #ddd;
+                }
+                p {
+                  margin: 2px 0;
+                  b {
+                    color: #EC4949;
+                  }
+                }
+              }
+            }
+            th {
+              .emp_pic {
+                width: 30%;
+                margin: 12px 1%;
+                img {
+                  border-radius: 100px;
+                  border: 2px solid #DDD;
+                }
+              }
+              .emp_desc {
+                width: 68%;
+              }
+              .shop_name {
+                margin: 15px 0 0;
+                font-weight: bold;
+                text-align: left;
+                color: black;
+                font-size: 1.4rem;
+              }
+              .emp_name, .emp_job {
+                font-size: 1.2rem;
+                text-align: left;
+                color: #757575;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  .series {
+    .series_info {
+      width: 100%;
+      height: 8rem;
+      background: white;
+      border-bottom: 1px solid #EEE;
+      .series_img {
+        height: 100%;
+      }
+      .series_desc {
+        margin-top:25px;
+        font-size: 1.4rem;
+        .price {
+          color: #757575;
+          b {
+            color: #EC4949;
+          }
+        }
+      }
+    }
+    .extra_info {
+      width: 100%;
+      height: 45px;
+      border-bottom: 1px solid #EEE;
+      overflow: hidden;
+      background: white;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+      position:initial;
+      ul {
+        height: 100%;
+        li {
+          width: 33.333%;
+          height: 100%;
+          display: inline-block;
+          text-align: center;
+          border-right:1px solid #EEE;
+          margin-right: -1px;
+          .count {
+            margin-top: 6px;
+            color:#EC4949;
+            font-size: 1.4rem;
+          }
+          .desc {
+            margin-top: 2px;
+          }
+        }
+      }
+    }
+    .show_history_btn {
+      width: 100%;
+      height: 48px;
+      overflow: hidden;
+      background: white;
+      button {
+        width: 90%;
+        height: 36px;
+        background: #171717;
+        border-radius: 8px;
+        color: white;
+        margin: 0.45rem auto 0;
+        display: block;
+        font-size: 1.4rem;
+        font-weight: normal;
+      }
+    }
+  }
+  .car_model_list {
+    dt {
+      height: 2rem;
+      line-height: 2rem;
+      padding: 0 0 0 1.5rem;
+      background: #eaeaea;
+      h2 {
+        font-size: 1.3rem;
+        color: #757575;
+      }
+    }
+    dd {
+      background: white;
+      border-bottom: 1px solid #eeeeee;
+      position: relative;
+      color: #757575;
+      font-size: 1.4rem;
+      a {
+        display: table;
+        padding: 0.8rem 2%;
+        width: 96%;
+        .detail {
+          width: 75%;
+          display: table-cell;
+          color: #c1c1c1;
+          font-size: 1.2rem;
+          h3 {
+            font-size: 1.4rem;
+            color: #757575;
+            margin-bottom: 1rem;
+            font-weight: normal;
+          }
+        }
+        .price {
+          width: 25%;
+          vertical-align: middle;
+          display: table-cell;
+          color: #EC4949;
+          text-align: right;
+          b {
+            font-weight: normal;
+          }
+        }
+      }
+    }
+  }
+}

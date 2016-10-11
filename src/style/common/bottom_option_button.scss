@@ -1,0 +1,83 @@
+.option_button_wrapper {
+  position: fixed;
+  bottom: 6.2rem;
+  right: 6.6rem;
+  .option_button_mine {
+    width: 56px;
+    height: 50px;
+    background: white;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: all 0.3s cubic-bezier(0.4, 0.01, 0.165, 0.99);
+    background: url(../../images/car_shop/ico2.png) -60px -3px no-repeat;
+    background-size: 560px auto;
+    text-align: center;
+    &::before {
+      content:'';
+      display: block;
+      width: 26px;
+      height: 26px;
+      background: url(../../images/car_shop/ico2.png) -82px -56px no-repeat;
+      background-size: 530px auto;
+      margin: 1px auto;
+    }
+    &.show {
+      top: -7rem;
+      left:0.2rem;
+    }
+    &.hide {
+      top: 0;
+    }
+  }
+  .option_button_phonecall {
+    width: 56px;
+    height: 50px;
+    background: white;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: all 0.3s cubic-bezier(0.4, 0.01, 0.165, 0.99);
+    background: url(../../images/car_shop/ico2.png) -60px -3px no-repeat;
+    background-size: 560px auto;
+    text-align: center;
+    color:#333;
+    font-size:12px;
+    &::before {
+      content:'';
+      display: block;
+      width: 26px;
+      height: 26px;
+      background: url(../../images/car_shop/ico2.png) 2px -56px no-repeat;
+      background-size: 530px auto;
+      margin: 1px auto;
+    }
+    &.show {
+      top: -4rem;
+      left:-6.0rem;
+    }
+    &.hide {
+      top: 0;
+    }
+  }
+  .option_button {
+    width: 54px;
+    height: 54px;
+    background: url('../../images/index/footer_option_button.png') no-repeat;
+    background-size: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+}
+
+.screen_mask {
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.2);
+  position: fixed;
+  top:0;
+  left:0;
+  &.show {display: block;}
+  &.hide {display: none;}
+}

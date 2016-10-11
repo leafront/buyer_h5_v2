@@ -1,0 +1,318 @@
+.direct_sale {
+  padding-top: 44px;
+  background: white;
+  .sale_list_filter {
+    position: fixed;
+    width: 100%;
+    z-index: 10;
+    background: white;
+    top: 44px;
+    height: 44px;
+    border-bottom: 1px solid #e5e5e5;
+    .tab_buttons {
+      button {
+        font-size: 1.4rem;
+        margin-top: 1.3rem;
+        padding: 0 20px;
+        background: none;
+        &.price_range_button {
+          &::after {
+            display: inline-block;
+            content:'';
+            border:4px solid transparent;
+            border-top:4px solid black;
+            margin: 0 2px;
+          }
+          &.active {
+            color: #fc4d4d;
+            &::after {
+              position: relative;
+              top: -4px;
+              border-top:4px solid transparent;
+              border-bottom:4px solid #fc4d4d;
+            }
+          }
+        }
+        &.type_button {
+          &::after {
+            display: inline-block;
+            content:'';
+            border:4px solid transparent;
+            border-top:4px solid black;
+            margin: 0 2px;
+          }
+          &.active {
+            color: #fc4d4d;
+            &::after {
+              position: relative;
+              top: -4px;
+              border-top:4px solid transparent;
+              border-bottom:4px solid #fc4d4d;
+            }
+          }
+        }
+        &.brand_button {
+          &::after {
+            display: inline-block;
+            content:'';
+            border:4px solid transparent;
+            border-top:4px solid black;
+            margin: 0 2px;
+          }
+          &.active {
+            color: #fc4d4d;
+            &::after {
+              position: relative;
+              top: -4px;
+              border-top:4px solid transparent;
+              border-bottom:4px solid #fc4d4d;
+            }
+          }
+        }
+        &.price_button {
+          position: absolute;
+          right: 0;
+          border-left: 1px solid #e5e5e5;
+          &.high_to_low {
+            color: #fc4d4d;
+            &::before {
+              border-top:4px solid #fc4d4d;
+            }
+          }
+          &.low_to_high {
+            color: #fc4d4d;
+            &::after {
+              border-bottom:4px solid #fc4d4d;
+            }
+          }
+          &::before , &::after {
+            position: absolute;
+            right: 10px;
+            content: '';
+            border:4px solid transparent;
+          }
+          &::before {
+            border-top:4px solid black;
+            top:1rem;
+          }
+          &::after {
+            border-bottom:4px solid black;
+          }
+        }
+      }
+    }
+    .price_range_option_list {
+      width: 100%;
+      height: 100%;
+      position: fixed;
+      top:89px;
+      z-index: 10;
+      background: rgba(0,0,0,0.8);
+      .price_range_option_mask {
+        height: 11rem;
+        overflow: scroll;
+        background: white;
+        ul {
+          background: white;
+          li {
+            width: 23%;
+            border-radius: 2px;
+            margin:10px 5%;
+            padding: 2px 0;
+            font-size: 1.3rem;
+            text-align: center;
+            box-sizing:border-box;
+            display: inline-block;
+            background: #f0eded;
+            border:1px solid #f0eded;
+            &.active {
+              border:1px solid #fc4d4d;
+              background: white;
+              color:#fc4d4d;
+              &::before {
+                content:' ';
+                display: inline-block;
+                width: 10px;
+                height: 10px;
+                margin: 0 2px;
+                background: url('../../images/direct_sale_list/just_right.jpg') 0 center no-repeat;
+                background-size: 100% auto;
+              }
+            }
+          }
+        }
+      }
+    }
+    .car_type_option_list {
+      width: 100%;
+      height: 100%;
+      position: fixed;
+      top:89px;
+      z-index: 10;
+      background: rgba(0,0,0,0.8);
+      .car_type_option_mask {
+        height: 35rem;
+        overflow: scroll;
+        ul {
+          background: white;
+          li {
+            // margin:0 1.4167rem;
+            margin: 0 1%;
+            height: 4.583rem;
+            line-height: 4.583rem;
+            border-bottom: 1px solid #efefef;
+            position: relative;
+            .car_type_img {
+              width: 90px;
+              height: 100%;
+              display: inline-block;
+              margin-right: 1.5rem;
+              &.all {
+                background:url('../../images/direct_sale_list/car_type_all.png') center no-repeat;
+                background-size: 100% auto;
+              }
+              &.sedan {
+                background:url('../../images/direct_sale_list/car_type_sedan.png') center no-repeat;
+                background-size: 100% auto;
+              }
+              &.suv {
+                background:url('../../images/direct_sale_list/car_type_suv.png') center no-repeat;
+                background-size: 100% auto;
+              }
+              &.mpv {
+                background:url('../../images/direct_sale_list/car_type_mpv.png') center no-repeat;
+                background-size: 100% auto;
+              }
+              &.sport {
+                background:url('../../images/direct_sale_list/car_type_sport.png') center no-repeat;
+                background-size: 100% auto;
+              }
+            }
+            .car_type_name {
+              display: inline-block;
+              font-size: 1.4rem;
+              vertical-align: top;
+            }
+            .car_type_count {
+              position: absolute;
+              right: 5px;
+              width: 30%;
+              height: 1.6rem;
+              line-height: 1.6rem;
+              text-align: center;
+              top: 1.5rem;
+              b {
+                color: #fc4d4d;
+              }
+            }
+          }
+        }
+      }
+    }
+    .brand_option_list {
+      width: 100%;
+      height: 100%;
+      position: fixed;
+      top:89px;
+      z-index: 10;
+      background: rgba(0,0,0,0.8);
+      .brand_option_mask {
+        height: 35rem;
+        overflow: scroll;
+        ul {
+          background: white;
+          li {
+            margin:0 1.4167rem;
+            height: 4.583rem;
+            line-height: 4.583rem;
+            border-bottom: 1px solid #efefef;
+            position: relative;
+            .brand_img {
+              width: 4rem;
+              display: inline-block;
+              margin-right: 1.5rem;
+              text-align: center;
+            }
+            .brand_name {
+              display: inline-block;
+            }
+            .min_discount {
+              position: absolute;
+              right: 5px;
+              background: #fc4d4d;
+              color: white;
+              width: 5.5rem;
+              height: 1.6rem;
+              line-height: 1.6rem;
+              text-align: center;
+              top: 1.5rem;
+            }
+          }
+        }
+      }
+      button {
+
+      }
+    }
+  }
+  .car_list {
+    a {
+      position: relative;
+      display: block;
+      padding: 3rem 0 2rem;
+      border-bottom: 1px solid #e5e5e5;
+      .discount {
+        position: absolute;
+        background: #fc4d4d;
+        color: white;
+        padding: 5px;
+        top: 5px;
+        left: 5px;
+        font-weight: bold;
+      }
+      .direct_car_info {
+        .car_img {
+          padding: 0 1%;
+          width: 34%;
+          display: inline-block;
+          vertical-align: top;
+        }
+        .car_text {
+          padding: 0 1%;
+          width: 62%;
+          display: inline-block;
+          text-align: right;
+          p{
+            font-size:1.4rem;
+          }
+          .guidePrice{
+            text-decoration:line-through;
+            color:#ccc;
+            display:inline-block;
+            margin-right:5px;
+          }
+          .givePrice{
+            em{
+              color:#ff6b6b;
+              font-size:1.6rem;
+              font-weight:bold;
+            }
+          }
+          .tag_list {
+            li {
+              border: 1px dotted gray;
+              display: inline-block;
+              width: 31%;
+              box-sizing: border-box;
+              padding: 1%;
+              margin: 1%;
+              font-size: 1.2rem;
+              border-radius: 4px;
+              text-align: center;
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,15 @@
+.global_go_service_button_wrapper {
+  position: fixed;
+  top: 60%;
+  right: 0;
+  z-index:10;
+  button {
+    width: 48px;
+    height: 48px;
+    display: block;
+    opacity: 0.6;
+    border-radius: 8px 0 0 8px;
+    background: #FF0000 url(../../images/common/go_service_page_hover_button.png) 8px 12px no-repeat;
+    background-size: 33px 23px;
+  }
+}

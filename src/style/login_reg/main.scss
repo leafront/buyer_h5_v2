@@ -1,0 +1,188 @@
+.login_and_reg {
+  .bottom_protocol {
+    width:100%;
+    font-size:1.2rem;
+    color:#757575;
+    text-align:left;
+    margin:230px auto 0;
+    .login_contact_call {
+      border-left: 1px dotted #757575;
+      padding-left: 5%;
+      padding-right: 1.5rem;
+      a {
+        width: 40px;
+        height: 40px;
+        display: block;
+        position: relative;
+        z-index: 10;
+        background: url(../../images/login_reg/contact_us_icon.png) no-repeat;
+        background-size: 40px;
+      }
+    }
+    .login_protocol_text {
+      padding-left: 20px;
+      position: relative;
+      width: 80%;
+      padding-left: 4.5rem;
+      .login_protocol_content {
+        &::before {
+          width: 18px;
+          height: 18px;
+          content: ' ';
+          display: block;
+          border-color: #ff6531;
+          background: url(../../images/login_reg/yes.png) center center no-repeat;
+          background-size: 100%;
+          display: block;
+          left: 18px;
+          top: -2px;
+          position: absolute;
+        }
+        &.active {
+          &::before {
+            background: #fff;
+            border-radius: 50%;
+          }
+        }
+      }
+      .phone_call {
+        a {
+          color:#757575;
+        }
+      }
+    }
+  }
+  .login {
+    .car_shop_login {
+      background: white;
+      padding-top: 1.5rem;
+      .service_slogen {
+        padding: 0.5rem 0 1.3rem;
+        text-align: center;
+        h3 {
+          font-size: 1.8rem;
+          color: #ec4949;
+          font-weight: bold;
+          margin-bottom: 0.3rem;
+        }
+        p {
+          font-size: 1.4rem;
+          font-weight: bold;
+        }
+      }
+      .advisor_list {
+        border-bottom: 1px dotted #eee;
+        text-align: center;
+        li {
+          width: 33.33%;
+          display: inline-block;
+          vertical-align: top;
+          .advisor_img {
+            width: 5rem;
+            height: 5rem;
+            margin:0 auto;
+            overflow: hidden;
+            border-radius: 300px;
+            background: #fff;
+          }
+          .advisor_shop_name {
+            margin: 0.1rem 0 0.8rem;
+            text-align: center;
+            font-size: 1.4rem;
+          }
+        }
+      }
+    }
+    .logo {
+      padding-top: 2rem;
+      text-align: center;
+    }
+    .attention_msg {
+      // visibility: hidden;
+      text-align: center;
+      font-size: 1.4rem;
+      margin-top: 1.5rem;
+      // &.show {
+      //   visibility: visible;
+      // }
+    }
+    .login_form {
+      input {
+        border: 1px solid #dadada;
+        border-radius: 6px;
+        display: block;
+        height: 48px;
+        box-sizing: border-box;
+        padding: 10px 15px;
+        line-height: 28px;
+        font-size: 1.4rem;
+        display: inline-block;
+      }
+    }
+    .phone {
+      text-align: center;
+      margin-top: 1rem;
+      input {
+        width: 90%;
+      }
+    }
+    .verifycode {
+      text-align: center;
+      transition: all 0.5s;
+      overflow: hidden;
+      margin-top: 1rem;
+      .sms {
+        input {
+          width: 60%;
+        }
+        button {
+          width: 25%;
+          margin-left: 5%;
+          text-align: center;
+          height: 48px;
+          background: #ec4949;
+          border-radius: 6px;
+          color: #fff;
+          line-height: 48px;
+          font-size: 1.4rem;
+          &.disable {
+            background: #ccc;
+            border: 1px solid #e1e1e1;
+          }
+        }
+      }
+      .voice {
+        margin-top: 1rem;
+        text-align: right;
+        margin-right: 10%;
+        color: #757575;
+        button {
+          color: #ec4949;
+          background: none;
+        }
+      }
+      .nick_name {
+        margin-top: 10px;
+        input {
+          width: 90%;
+        }
+      }
+    }
+    .submit {
+      margin-top: 1.5rem;
+      button {
+        width: 90%;
+        font-weight: normal;
+        display: block;
+        margin: 0 auto;
+        height: 48px;
+        color: #fff;
+        text-align: center;
+        line-height: 48px;
+        font-size: 1.6rem;
+        border-radius: 6px;
+        background: #ec4949;
+      }
+    }
+  }
+}

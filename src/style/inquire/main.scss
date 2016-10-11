@@ -1,0 +1,135 @@
+.inquire {
+  .recommand_car_list {
+    background: white;
+    margin-top: 1rem;
+    h2 {
+      height: 3rem;
+      line-height: 3rem;
+      padding-left: 1rem;
+      color: #a1a1a1;
+      padding-right: 1.8rem;
+      font-size: 1.2rem;
+      font-weight: normal;
+    }
+    li {
+      display: inline-block;
+      padding: 0 0.6rem 1.6667rem;
+      width: 50%;
+      box-sizing: border-box;
+      -webkit-box-sizing: border-box;
+      border-top: 1px solid #f0f0f0;
+      border-right: 1px solid #f0f0f0;
+      font-size: 1.1rem;
+      position: relative;
+      img {
+        width: 100%;
+      }
+      .discount {
+        position: absolute;
+        top: 0;
+        left: 1rem;
+        text-align: center;
+        line-height: 2.58rem;
+        color: white;
+        display: block;
+        width: 3.5rem;
+        height: 2.58rem;
+        background: #EC4949;
+        font-weight: normal;
+        font-size: 1.2rem;
+      }
+      .car_name {
+        font-weight: bold;
+      }
+      .car_img {
+        margin-top: 1rem;
+      }
+      .price_info {
+        margin-top: 0.5rem;
+        .discount_price {
+          color: #EC4949;
+          margin-right: 10px;
+        }
+        .recommand_price {
+          text-decoration: line-through;
+          color: #afafaf;
+        }
+      }
+    }
+  }
+  .top_slogen {
+    background: white;
+    -webkit-box-align: center;
+    padding: 1rem 1rem 0.7rem 1rem;
+    box-sizing: border-box;
+    overflow: hidden;
+    b {
+      color: #EC3E3D;
+    }
+  }
+  .service_info {
+    position: relative;
+    margin-top: 3.5rem;
+    background: #fffef1;
+    padding: 4rem 0.833rem 3rem;
+    .advisor_icon {
+      width: 5rem;
+      background: url(../../images/car_shop/ico2.png) no-repeat -486px -346px;
+      height: 4.833rem;
+      display: block;
+      background-size: 570px 429px;
+      position: absolute;
+      left: 50%;
+      top: -2.75rem;
+      margin-left: -2.5rem;
+    }
+    .contact {
+      text-align: center;
+      padding: 0 1rem 2.3rem;
+      margin-bottom: 1.2rem;
+      border-bottom: 1px dashed #efefef;
+      span {
+        font-size: 1.2rem;
+        color: #2b2b2b;
+        padding: 2px 20px;
+        &.phone_number {
+          background: url(../../images/inquire/phone.png) no-repeat;
+          background-size:  16px 16px;
+        }
+        &.weixin {
+          background: url(../../images/inquire/wechat.png) no-repeat;
+          background-size:  19px 15px;
+        }
+      }
+    }
+    .result {
+      text-align: center;
+      margin: 0 auto 2rem;
+      .result_text_1 {
+        color: #EC4949;
+        margin-bottom: 0.5rem;
+      }
+    }
+    .other_links {
+      text-align: center;
+      a {
+        font-size: 1.2rem;
+        display: inline-block;
+        color: white;
+        border-radius: 5px;
+        box-sizing: border-box;
+        text-align: center;
+        line-height: 3.334rem;
+        height: 3.334rem;
+        width: 40%;
+        margin: 0 10px;
+        &.make_call_btn {
+          background: #2f2f2f;
+        }
+        &.go_sale_list_btn {
+          background: #EC4949;
+        }
+      }
+    }
+  }
+}

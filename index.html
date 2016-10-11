@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>好买车</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no">
+    <meta name="format-detection" content="telephone=no" />
+    <style>
+      .app_loading {
+        width: 48px;
+        height: 48px;
+        display: block;
+        margin: 40% auto;
+        position:fixed;
+        top:50%;
+        left:50%;
+        margin-left:-24px;
+        margin-top:-24px;
+        z-index:9999;
+        background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEwAAABMCAYAAADHl1ErAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyJpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMy1jMDExIDY2LjE0NTY2MSwgMjAxMi8wMi8wNi0xNDo1NjoyNyAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNiAoV2luZG93cykiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6RUQxNTdENTk5QjA5MTFFNEFCOUVFMjg1NDkyOTc5NjkiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6RUQxNTdENUE5QjA5MTFFNEFCOUVFMjg1NDkyOTc5NjkiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDpFRDE1N0Q1NzlCMDkxMUU0QUI5RUUyODU0OTI5Nzk2OSIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDpFRDE1N0Q1ODlCMDkxMUU0QUI5RUUyODU0OTI5Nzk2OSIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/PubthRwAAAyrSURBVHja7Fx7cFTl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") no-repeat center center;
+        background-size: 100%;
+        -webkit-animation: std_loading 1.8s ease-in-out infinite;
+        -moz-animation: std_loading 1.8s ease-in-out infinite;
+        -ms-animation: std_loading 1.8s ease-in-out infinite;
+        animation: std_loading 1.8s ease-in-out infinite;
+      }
+      @-webkit-keyframes std_loading {
+        0%   { opacity:1; -webkit-transform:rotate(0deg);}
+        100% { opacity:1; -webkit-transform:rotate(360deg);}
+      }
+      @-moz-keyframes std_loading {
+        0%   { opacity:1; -moz-transform:rotate(0deg);}
+        100% { opacity:1; -moz-transform:rotate(360deg);}
+      }
+      @-ms-keyframes std_loading{
+        0%   { opacity:1; -ms-transform:rotate(0deg);}
+        100% { opacity:1; -ms-transform:rotate(360deg);}
+      }
+      @keyframes std_loading{
+        0%   { opacity:1; transform:rotate(0deg);}
+        100% { opacity:1; transform:rotate(360deg);}
+      }
+    </style>
+  </head>
+  <body>
+    <div style="display:none;">
+      <script src='http://static.haomaiche.com/js/thirdparty/thirdparty_data_collection.js'></script>
+    </div>
+    <div id="content">
+      <div class="app_loading"></div>
+    </div>
+    <script src="./build/app.js"></script>
+    <script>
+        window.easemobim = window.easemobim || {};
+        easemobim.config = {
+            appKey: 'haomaiche#haomaiche',
+            to: '758l9c1yl5',
+            tenantId: '15993',
+            domain: '//kefu.easemob.com',     //环信移动客服域,   domain: '//kefu.easemob.com',
+            path: './webim',        //im.html的服务器路径,  path: '//XXX/webim'
+            staticPath: './static',  //访客插件static的路径,   staticPath: '//XXX/static'
+            hide: true
+        };
+    </script>
+    <script src='./webim/easemob.js'></script>
+  </body>
+</html>

@@ -1,0 +1,178 @@
+.order_requirement{
+  .free_upgrade_config{
+    border-top: 1px solid #f1f1f1;
+    padding-top:10px;
+    margin-bottom: 48px;
+  }
+  i{
+    font-style:normal;
+  }
+  .for_cars {
+    height: 30px;
+    padding-left: 20px;
+    line-height: 30px;
+    color: #9f9f9f;
+    font-weight:bold;
+  }
+  .list_of_demand{
+    background:#fff;
+    .payment {
+      height: 26px;
+      background: url("../../images/user_center/dot.jpg") repeat-x bottom;
+      line-height: 10px;
+      margin-left: 20px;
+      padding-top: 20px;
+      margin-right: 20px;
+      span {
+        &:first-child {
+          font-size: 1.4rem;
+          font-weight: bold;
+        }
+      }
+      .down_pay {
+        color: #a1a1a1;
+        float:right;
+        i {
+          font-size: 1.4rem;
+          color: #E92929;
+        }
+      }
+    }
+    .pay_sty {
+      padding: 6px 0 14px;
+      float: left;
+      border-bottom: 1px solid #f1f1f1;
+      width: 90%;
+      padding-bottom: 14px;
+      line-height: 20px;
+      padding-left: 20px;
+      span {
+        color: #a1a1a1;
+        padding-right: 10px;
+        &:nth-child(2), &:nth-child(3){
+          margin-left:10px;
+        }
+        &:nth-child(1), &:nth-child(2){
+          border-right: 1px solid #a1a1a1;
+        }
+        &:last-child {
+          color: #E92929;
+        }
+      }
+    }
+    .license_tag {
+      margin: 0 20px;
+      padding-top: 18px;
+      clear:both;
+      span{
+        color:#2b2b2b;
+        &:first-child {
+          font-size: 1.4rem;
+          font-weight: bold;
+        }
+      }
+      .cost {
+        color: #a1a1a1;
+        float: right;
+        i {
+          font-size: 1.4rem;
+          color: #E92929;
+        }
+      }
+    }
+    .lic_select {
+      margin:8px 20px 14px;
+      padding-top: 10px;
+      background: url("../../images/user_center/dot.jpg") repeat-x top;
+      span{
+        display:block;
+        line-height:20px;
+      }
+      .waipai{
+        color: #a1a1a1;
+      }
+      .stress {
+        color: #E92929;
+      }
+    }
+    .fixed_charge {
+      clear:both;
+      height: 50px;
+      padding-left: 20px;
+      padding-right: 20px;
+      line-height: 50px;
+      border-top: 1px solid #f1f1f1;
+      &.fixed_charge_last{
+        height: 42px;
+      }
+      span{
+        color:#2b2b2b;
+        &:first-child {
+          float: left;
+          font-weight: bold;
+          font-size: 1.4rem;
+        }
+        &:last-child {
+          float: right;
+          color:#a1a1a1;
+        }
+        i {
+          font-size: 1.4rem;
+          color: #E92929;
+        }
+      }
+    }
+    .insur_cont {
+      height: 50px;
+      margin: 0 20px;
+      color: #a1a1a1;
+      background: url("../../images/user_center/dot.jpg") repeat-x top;
+      padding-top: 14px;
+    }
+  }
+  .Contact_Cus {
+    height: 52px;
+    width: 100%;
+    font-size: 1.4rem;
+    background: #fff;
+    text-align: center;
+    line-height: 52px;
+    color: #fff;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    box-shadow: 0 -2px 4px #ccc;
+    button, a {
+      display: inline-block;
+      color: #FFF;
+      border-radius:6px;
+      height:36px;
+      line-height:36px;
+      font-size:14px;
+      font-weight:bold;
+      &.im_chat{
+        width:30%;
+        margin-right:10px;
+        background:#fe8320;
+        &::before {
+          content: '';
+          display: inline-block;
+          vertical-align: middle;
+          background: url("../../images/my_order/im_chat.png") no-repeat;
+          background-size: 20px;
+          width: 24px;
+          height: 24px;
+          margin-right: 4px;
+        }
+      }
+      &.online_pay{
+        width:60%;
+        background:#ff3d3d;
+      }
+      &.see_licence{
+        width:90%;
+        background:#0097f9;
+      }
+    }
+  }
+}

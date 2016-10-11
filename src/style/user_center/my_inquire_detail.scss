@@ -1,0 +1,235 @@
+.my_inquire_detail_content{
+  .contact_us {
+    width: 100%;
+    height: 60px;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    .img_call {
+      width: 54px;
+      position: absolute;
+      left: 20px;
+      top: -10px;
+      display: block;
+      z-index: 9;
+    }
+    a {
+      width: 46%;
+      z-index: 99;
+      position: absolute;
+      left: 26%;
+      bottom: 0;
+      color: #fff;
+      background: #2b2b2b;
+      height: 50px;
+      font-size: 1.4rem;
+      text-align: center;
+      line-height: 50px;
+    }
+    em {
+      background: #ec4949;
+      z-index: 99;
+      position: absolute;
+      width: 30%;
+      right: 0;
+      bottom: 0;
+      font-size: 1.4rem;
+      color: #fff;
+      height: 44px;
+      text-align: center;
+      line-height: 40px;
+      padding-top: 6px;
+    }
+    span {
+      background: #050505;
+      opacity: 0.8;
+      height: 50px;
+      display: block;
+      margin-top: 10px;
+    }
+  }
+  .stores_title {
+    height: 40px;
+    width: 100%;
+    position: fixed;
+    z-index: 99;
+    padding-top: 6px;
+    border-bottom: 1px solid #d5d5d5;
+    background: #fff;
+    ul {
+      height: 30px;
+      border: 1px solid #2B2B2B;
+      display: table;
+      width: 94%;
+      margin: 0 auto;
+      border-radius: 6px;
+      li {
+        display: table-cell;
+        height: 30px;
+        line-height: 30px;
+        text-align: center;
+        border-right: 1px solid #2B2B2B;
+        max-width: 100px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        &.current {
+          background: #2b2b2b;
+          color: #fff;
+        }
+      }
+      :last-child{
+        border:none;
+      }
+    }
+  }
+  .car_list {
+    display: block;
+    padding-left: 16px;
+    padding-right: 16px;
+    margin-top: 10px;
+    margin-bottom: 40px;
+    background: #fff;
+    padding-bottom: 32px;
+    li {
+      height: auto;
+      border-bottom: 1px dashed #a1a1a1;
+      line-height: 40px;
+      color: #a1a1a1;
+      &:last-child {
+        border: none;
+      }
+      &:first-child {
+        border-top: 1px dashed #a1a1a1;
+      }
+      i {
+        font-size: 1.4rem;
+        color: #E92929;
+        font-weight: bold;
+        font-style:normal;
+      }
+      span {
+        color: #050505;
+        &.give {
+          margin-left: 70px;
+          display: block;
+          margin-top: -30px;
+          line-height: 20px;
+          margin-bottom: 10px;
+        }
+      }
+    }
+    ul{
+      clear:both;
+    }
+  }
+  .ve_inform {
+    .ve_tit {
+      height: 30px;
+      position: relative;
+      border-bottom: 1px solid #f1f1f1;
+      color: #a1a1a1;
+      display: block;
+      line-height: 30px;
+      padding-right: 16px;
+      padding-top: 50px;
+      em:last-child {
+        position: absolute;
+        right: 10px;
+        top: 50px;
+      }
+    }
+    .car_detail {
+      display: block;
+      margin-right: 10px;
+      img {
+        width: 124px;
+        height: auto;
+        display: block;
+        margin: 10px;
+        float: left;
+      }
+      .favor {
+        margin-left: 134px;
+        padding-top: 20px;
+        padding-bottom: 10px;
+        span {
+          display: block;
+          line-height: 20px;
+          &:first-child {
+            font-weight: bold;
+          }
+          &:last-child {
+            color: #a1a1a1;
+          }
+        }
+        i {
+          font-size: 1.4rem;
+          color: #E92929;
+          font-weight: bold;
+          font-style:normal;
+        }
+      }
+    }
+  }
+
+}
+
+@media screen and (max-width: 360px) {
+  .my_inquire_detail_content{
+    .ve_inform{
+      .ve_tit {
+        height: 50px;
+        em:last-child {
+          top: 68px;
+          left: 0px;
+        }
+      }
+    }
+  }
+}
+
+
+.continuePrice{
+  width:100%;
+  height:100%;
+  position:fixed;
+  background-color:rgba(0,0,0,0.5);
+  z-index:500;
+  top:0;
+  left:0;
+  .continueContent{
+    position:relative;
+    width:300px;
+    margin:0 auto;
+    margin-top:200px;
+    background-color:#fff;
+    border:1px solid #000;
+    height:120px;
+    .continueImg{
+      display:inline-block;
+      margin-top:10px;
+      vertical-align:top;
+    }
+    .continueText{
+      display:inline-block;
+      text-align:center;
+      margin-top:10px;
+      p{
+        margin-bottom:5px;
+        span{
+          color:#fa4d4d;
+          font-weight:bold;
+        }
+      }
+      button{
+        width:95px;
+        margin-top:5px;
+        background-color:#fff;
+        border:1px solid #000;
+        border-radius:3px;
+        line-height:22px;
+      }
+    }
+  }
+}

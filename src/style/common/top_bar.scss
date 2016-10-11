@@ -1,0 +1,108 @@
+.top_bar {
+  top: 0;
+  position: fixed;
+  left: 0;
+  right: 0;
+  height: 44px;
+  line-height: 44px;
+  background: rgba(0,0,0,0.85);
+  color: #fff;
+  z-index: 960;
+  .index_top_bar {
+    display: none;
+    &.active {
+      display: block;
+    }
+    .logo, .location {
+      display: inline-block;
+      vertical-align: top;
+    }
+    .logo {
+      background: url(../../images/common/logo.png) no-repeat;
+      width: 75px;
+      height: 20px;
+      background-size: 70px auto;
+      box-sizing: border-box;
+      margin-left: 1.6rem;
+      margin-top: 1.5rem;
+    }
+    .location {
+      margin-top: 0.2rem;
+      &::before {
+        content: ' | ';
+      }
+    }
+  }
+  .other_top_bar {
+    display: none;
+    position: relative;
+    .page_title {
+      text-align: center;
+      font-size: 1.8rem;
+      font-weight: normal;
+    }
+    .home_btn_popup {
+      display: none;
+      position: absolute;
+      top: 49px;
+      right: 5px;
+      &.active {
+        display: block;
+      }
+      ::before {
+        content:'';
+        position: absolute;
+        right: 12px;
+        top:-16px;
+        display: block;
+        border: 8px solid transparent;
+        border-bottom: 8px solid rgba(0,0,0,0.7);
+      }
+      a {
+        color: white;
+        background: rgba(0,0,0,0.7);
+        width: 12rem;
+        height: 5.5rem;
+        line-height: 5.5rem;
+        text-align: center;
+        display: block;
+        color: white;
+        font-size: 1.2rem;
+        border-bottom: 1px solid rgba(255,255,255,0.5);
+      }
+    }
+    &.active {
+      display: block;
+    }
+    .back_btn {
+      width: 22px;
+      height: 20px;
+      line-height: 13px;
+      display: block;
+      // margin: 14px 0 0 16px;
+      position: absolute;
+      top: 14px;
+      left: 16px;
+      background: url(../../images/car_shop/ico2.png) no-repeat -300px -182px;
+      background-size: 594px auto;
+    }
+    .home_btn {
+      width: 22px;
+      height: 20px;
+      line-height: 13px;
+      display: block;
+      position: absolute;
+      right: 16px;
+      top:14px;
+      background: url(../../images/car_shop/ico2.png) no-repeat -278px -180px;
+      background-size: 594px auto;
+    }
+  }
+}
+// .index-header .js_back {
+//     width: 44px;
+//     height: 44px;
+//     display: block;
+//     text-align: center;
+//     cursor: pointer;
+// }

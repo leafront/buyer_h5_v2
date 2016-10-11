@@ -1,0 +1,76 @@
+.bottom_nav_button {
+    height: 52px;
+    width: 100%;
+    font-size: 1.4rem;
+    background: #fff;
+    text-align: center;
+    line-height: 52px;
+    color: #fff;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    box-shadow: 0 -2px 4px #ccc;
+    a{
+      display:inline-block;
+      width:25%;
+      height:52px;
+      color:#333;
+      float:left;
+      position:relative;
+      &.current{
+        &.nav_home{
+          background: #fff url('../../images/common/home_current.png') center 10px no-repeat;
+          background-size:36px;
+          span{
+            display:none;
+            top:0;
+          }
+        }
+        &.nav_inquire{
+          background: #fff url('../../images/common/inquire_current.png') center 10px no-repeat;
+          background-size:30px;
+          span{
+            display:none;
+            top:0;
+          }
+        }
+        &.nav_direct_sale{
+          background: #fff url('../../images/common/direct_sale_current.png') center 10px no-repeat;
+          background-size:36px;
+          span{
+            display:none;
+            top:0;
+          }
+        }
+        &.nav_mine{
+          background: #fff url('../../images/common/mine_current.png') center 10px no-repeat;
+          background-size:30px;
+          span{
+            display:none;
+            top:0;
+          }
+        }
+      }
+      &.nav_home{
+        background: #fff url('../../images/common/home.png') center 6px no-repeat;
+        background-size:28px;
+      }
+      &.nav_inquire{
+        background: #fff url('../../images/common/inquire.png') center 6px no-repeat;
+        background-size:22px;
+      }
+      &.nav_direct_sale{
+        background: #fff url('../../images/common/direct_sale.png') center 6px no-repeat;
+        background-size:28px;
+      }
+      &.nav_mine{
+        background: #fff url('../../images/common/mine.png') center 6px no-repeat;
+        background-size:22px;
+      }
+      span{
+        position:relative;
+        top:15px;
+        font-size:12px;
+      }
+    }
+}

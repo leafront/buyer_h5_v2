@@ -1,0 +1,120 @@
+.my_inquire_item{
+  height: auto;
+  background: #fff;
+  margin-top: 10px;
+  div.invalid{
+    em:last-child{
+      position: absolute;
+      right: 10px;
+      top: 0;
+      color: #E92929;
+      text-decoration: underline;
+    }
+    .car_detail{
+      opacity: 0.4;
+    }
+  }
+  .order_num{
+    height: 30px;
+    position: relative;
+    border-bottom: 1px solid #f1f1f1;
+    color: #a1a1a1;
+    display: block;
+    line-height: 30px;
+    padding-left: 6px;
+    padding-right: 16px;
+    padding-top: 0;
+    em{
+      float: left;
+      color: #E92929;
+      font-style:normal;
+      &.wait{
+        color: #a1a1a1;
+      }
+      &:last-child {
+        position: absolute;
+        right: 10px;
+        top: 0;
+        color: #a1a1a1;
+      }
+    }
+  }
+  .car_detail {
+    display: block;
+    margin-right: 10px;
+    padding-bottom: 20px;
+    img {
+      width: 124px;
+      height: auto;
+      display: block;
+      float: left;
+    }
+    .favor {
+      margin-left: 134px;
+      height: 62px;
+      padding-top: 20px;
+      span {
+        display: block;
+        line-height: 20px;
+        &:first-child {
+          font-weight: bold;
+        }
+        &:last-child {
+          color: #a1a1a1;
+        }
+      }
+      i {
+        font-size: 1.4rem;
+        color: #E92929;
+        font-weight: bold;
+        font-style:normal;
+      }
+    }
+  }
+  .offer_list {
+    background: #fff;
+    position: relative;
+    padding-bottom: 20px;
+    li{
+      height: 80px;
+      position: relative;
+      background: url("../../images/user_center/go_next.jpg") no-repeat 98% 40px, url("../../images/user_center/dot.jpg") repeat-x 6px 10px;
+      a{
+        position:absolute;
+        display:inline-block;
+        width:100%;
+        height:100%;
+      }
+      img {
+        width: 54px;
+        display: block;
+        position: absolute;
+        left: 10px;
+        top: 20px;
+      }
+      dl {
+        float: left;
+        width: 80%;
+        margin-left: 72px;
+        margin-top: 26px;
+        color: #a1a1a1;
+        i {
+          color: #E92929;
+          font-style:normal;
+        }
+        dd {
+          float: left;
+          line-height: 20px;
+        }
+        em {
+          font-style:normal;
+          padding:0.1rem 0.4rem;
+        }
+      }
+    }
+    li:nth-child(1) {
+      border-top: 1px solid #f1f1f1;
+      background: url("../../images/user_center/go_next.jpg") no-repeat 98% center;
+    }
+  }
+}
